@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+
+h2 {
+    font-size: 2em;
+}
+/*todo el container*/
+.wrapper {
+    width: 100%;
+    
+}
+
+.wrapper .container {
+    padding-top: 10px;
+}
+
+/* INTENTO DE BLUR: no jala pq la imagen hace overflow*/
+/*
+.background-imagen {
+    background-image: url("/logos/DSC_0268.JPG");
+    position: absolute; 
+    height: 100%; 
+    width: 100%;
+    background-size: cover; 
+    background-position: center; 
+    display: block;
+    filter: blur(10px); 
+    overflow: hidden;
+    z-index: -1; 
+        
+}
+*/
+.sponsors {
+    background-image: url("/logos/DSC_0268.JPG");
+    border: 1px solid aqua;
+    --cols: 3;
+    --rows: 2;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-auto-rows: 1fr;*/
+    grid-gap: 20px;
+    /*background-color: violet;*/
+    
+}
+
+.wrapper .container .sponsors .logo-gallery {
+    width: 100%;
+    position: relative;
+   
+    /*padding: 100px;*/
+}
+
+.wrapper .container .sponsors .logo-gallery .logos {
+    width: 100%;
+    /*height: auto;
+    border: 5px solid black;*/
+    
+}
+
+.wrapper .container .sponsors .logo-gallery .logos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+   /* background-color: beige;*/
+}
+
+.wrapper .container .sponsors .logo-gallery .caption{
+    /*text-align: center;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 30px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    /*color: #222;*/
+    opacity: 0;
+    transition: 0.6s;
+    transition: opacity 0.30s;
+    /*background-color: aquamarine;*/
+    
+}
+
+.wrapper .container .sponsors .logo-gallery .caption h2 {
+    text-align: center;
+    position: absolute;
+    top:45%;
+    /*background-color: aqua;*/
+}
+
+p {
+    /*background-color: aqua;*/
+    position: absolute;
+    top: 70%;
+}
+
+.wrapper .container .sponsors .logo-gallery .caption:hover {
+    opacity: 1;
+
+}
+
+
+#hilton {
+    font-size: 1.5em;
+    padding: 5px;
+}
+#superlaser {
+    font-size: 1.5em;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+   
+}
+
+/*OTRO HOVER RARO*/
+/* plot twist: no jala pq el translate de la linea 142 no funciona, no se pq*/ 
+/*
+.wrapper .container .sponsors .logo-gallery .captiont:hover {
+    opacity: 1;
+}
+
+.wrapper .container .sponsors .logo-gallery .caption h2 {
+    text-align: center;
+}
+
+.wrapper .container .sponsors .logo-gallery .caption > *{
+    transform: translateY(25px);
+    transition: transform(0.6s);
+    
+}
+
+.wrapper .container .sponsors .logo-gallery .caption:hover > *{
+    transform: translateY(0px);
+}
+*/ 
+/*
+.caption {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #222;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+*/
+
+
+
